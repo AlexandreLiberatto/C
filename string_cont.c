@@ -12,7 +12,14 @@ int main ()
 
     while (frase[i] != '\0')
     {
-        if (frase[i] != '\n')
+        frase[i] = tolower(frase[i]);
+        ++i;
+    }
+    i = 0;
+
+    while (frase[i] != '\0')
+    {
+        if (frase[i] != '\n' && frase[i] == 'a' || frase[i] == 'e' || frase[i] == 'i' || frase[i] == 'o' || frase[i] == 'u')
         {
             ++contador;
         }
